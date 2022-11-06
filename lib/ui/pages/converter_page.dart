@@ -77,7 +77,7 @@ class _ConverterPageState extends State<ConverterPage> {
             ],
           ),
           const Expanded(
-              // TODOfr
+              // TODO
               // los nombres de las monedas se pueden obtener en la lista currencies
               // la tasa de cambio se puede obtener en la estructura de datos rates
               child: Center(
