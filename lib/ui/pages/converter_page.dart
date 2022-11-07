@@ -5,7 +5,7 @@ import '../../utils/constants.dart';
 import '../widgets/key_pad.dart';
 import '../widgets/selection_item.dart';
 
-// un widget con estado en el cual mantenemos los dos indices
+// un widget con estado en el cual mantenemos los dos indices mayores
 // de las monedas que vamos a convertir
 class ConverterPage extends StatefulWidget {
   const ConverterPage({Key? key}) : super(key: key);
