@@ -80,8 +80,11 @@ class _ConverterPageState extends State<ConverterPage> {
               // TODO
               // los nombres de las monedas se pueden obtener en la lista currencies
               // la tasa de cambio se puede obtener en la estructura de datos rates
+
+
+              // TODO en el keypad se necesita el rate por eso el error
               child: Center(
-            child: KeyPad(textCurrency1: urrency1, textCurrency2: Currency2, rate: rate) ,
+            child: KeyPad(textCurrency1: currency1, textCurrency2: currency2, rate: rate) ,
           ))
         ]));
   }

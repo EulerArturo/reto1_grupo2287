@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
-// ignore: unused_import
+
 import 'one_key.dart';
 
 // en este widget mostramos el keypad y los valores de las monedas
 class KeyPad extends StatefulWidget {
-  const KeyPad(
-      {Key? key,
+  const KeyPad({Key? key,
       required this.textCurrency1,
       required this.textCurrency2,
       required this.rate})
@@ -81,7 +80,7 @@ class _KeyPadState extends State<KeyPad> {
             children: [
               Padding(
                 padding: const EdgeInsets.all(8.0),
-                child: Text('se muestra textCurrency1'),
+                child: Text(widget.textCurrency1),
               ),
               Expanded(
                 child: Container(),
