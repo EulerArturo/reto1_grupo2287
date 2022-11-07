@@ -19,7 +19,7 @@ class _ConverterPageState extends State<ConverterPage> {
   int currency1 = 1;
   int currency2 = 0;
 
-  // función para construir el selector de monedas
+  //   función para construir el selector de monedas
   List<Widget> _buildItems() {
     return currencies
         .map((val) => SelectionItem(
