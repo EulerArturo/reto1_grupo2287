@@ -106,7 +106,7 @@ class _KeyPadState extends State<KeyPad> {
                 children: <Widget>[
                   // TODO
                   // en cada OneKey se manda el número y _onPressed para callback
-                  const Text('OneKey para 7, 8 y 9'),
+                  const Text('tres numeros a cambiar OneKey para 7, 8 y 9'),
                 ]),
           ),
           Expanded(
