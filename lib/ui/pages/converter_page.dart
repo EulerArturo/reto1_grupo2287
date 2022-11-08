@@ -31,9 +31,24 @@ class _ConverterPageState extends State<ConverterPage> {
   Widget build(BuildContext context) {
     // El siguiente widget en el arbol es el Scaffold
     return Scaffold(
+        backgroundColor: const Color.fromRGBO(187, 81, 181, 1.00),
         appBar: AppBar(
-          title: const Text('Combertidor de monedas'),
-        ),
+            centerTitle: true,
+            backgroundColor: const Color.fromRGBO(147, 17, 126, 1),
+            elevation: 20,
+            shape:
+                RoundedRectangleBorder(borderRadius: BorderRadius.circular(3)),
+            title: Row(mainAxisAlignment: MainAxisAlignment.center, children: [
+              Image.asset(
+                'assets/images/Logo.png',
+                scale: 1.5,
+              ),
+              const Text(
+                '   Combertidor de monedas ',
+                style:
+                    TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+              )
+            ])),
         body: Column(children: [
           Row(
             children: [
@@ -76,11 +91,8 @@ class _ConverterPageState extends State<ConverterPage> {
             ],
           ),
           Expanded(
-            // TODO
             // los nombres de las monedas se pueden obtener en la lista currencies
             // la tasa de cambio se puede obtener en la estructura de datos rates
-
-            // TODO en el keypad se necesita el rate por eso el error
 
             child: KeyPad(
                 textCurrency1: currencies[currency1],

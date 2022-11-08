@@ -10,10 +10,14 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         title: 'Currency converter',
         theme: ThemeData(
-          primarySwatch: Colors.amber,
+          primarySwatch: Colors.blue,
+          
+          textTheme:
+              const TextTheme(bodyText2: TextStyle(color: Colors.purple)),
+          
         ),
         home: const ConverterPage());
   }
 
-  void showCurrencyDialog() {}
+ 
 }
