@@ -36,6 +36,7 @@ class _ConverterPageState extends State<ConverterPage> {
             centerTitle: true,
             backgroundColor: const Color.fromRGBO(147, 17, 126, 1),
             elevation: 20,
+            
             shape:
                 RoundedRectangleBorder(borderRadius: BorderRadius.circular(3)),
             title: Row(mainAxisAlignment: MainAxisAlignment.center, children: [
@@ -46,10 +47,12 @@ class _ConverterPageState extends State<ConverterPage> {
               const Text(
                 '   Combertidor de monedas ',
                 style:
-                    TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+                    TextStyle(color: Colors.white, fontWeight: FontWeight.bold ),
               )
             ])),
-        body: Column(children: [
+        body: Column(
+          
+          children: [
           Row(
             children: [
               Expanded(
@@ -73,6 +76,8 @@ class _ConverterPageState extends State<ConverterPage> {
               Expanded(
                 // selector para la segunda moneda
                 child: DirectSelect(
+                    
+                    
                     itemExtent: 45.0,
                     selectedIndex: currency2,
                     backgroundColor: Theme.of(context).colorScheme.primary,
