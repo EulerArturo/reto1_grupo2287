@@ -1,7 +1,6 @@
 import 'package:direct_select/direct_select.dart';
 import 'package:flutter/material.dart';
 import '../../utils/constants.dart';
-// ignore: unused_import
 import '../widgets/key_pad.dart';
 import '../widgets/selection_item.dart';
 
@@ -76,16 +75,18 @@ class _ConverterPageState extends State<ConverterPage> {
               ),
             ],
           ),
-          const Expanded(
-              // TODO
-              // los nombres de las monedas se pueden obtener en la lista currencies
-              // la tasa de cambio se puede obtener en la estructura de datos rates
+          Expanded(
+            // TODO
+            // los nombres de las monedas se pueden obtener en la lista currencies
+            // la tasa de cambio se puede obtener en la estructura de datos rates
 
+            // TODO en el keypad se necesita el rate por eso el error
 
-              // TODO en el keypad se necesita el rate por eso el error
-              child: Center(
-            child: KeyPad(textCurrency1: currency1, textCurrency2: currency2, rate: rate) ,
-          ))
+            child: KeyPad(
+                textCurrency1: currencies[currency1],
+                textCurrency2: currencies[currency2],
+                rate: rates[currency1][currency2]),
+          )
         ]));
   }
 }
