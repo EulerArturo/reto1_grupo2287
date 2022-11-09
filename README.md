@@ -8,6 +8,8 @@ El siguiente es un demo de la interfaz a la que se debe llegar (funcionalidades 
 
 <img src="https://user-images.githubusercontent.com/4458129/173209201-ecf02c3e-8571-42a0-92d5-5a9111f5b3b0.gif" width="300" />
 
+ver imagenes en el assets en la carpeta images
+
 Solución:
 
-https://github.com/MisionTIC4b/f_currency_converter
+https://github.com/EulerArturo/reto1_grupo2287.git
