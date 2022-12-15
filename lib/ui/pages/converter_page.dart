@@ -39,6 +39,7 @@ class _ConverterPageState extends State<ConverterPage> {
             
             shape:
                 RoundedRectangleBorder(borderRadius: BorderRadius.circular(3)),
+
             title: Row(mainAxisAlignment: MainAxisAlignment.center, children: [
               Image.asset(
                 'assets/images/Logo.png',
@@ -49,7 +50,9 @@ class _ConverterPageState extends State<ConverterPage> {
                 style:
                     TextStyle(color: Colors.white, fontWeight: FontWeight.bold ),
               )
-            ])),
+            ]
+            )
+            ),
         body: Column(
           
           children: [
